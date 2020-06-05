@@ -1,0 +1,63 @@
+.dyx-circle-box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.dyx-circle-progress-container {
+  position: absolute;
+  width: 100px;
+  overflow: hidden;
+}
+
+.dyx-circle-left-container {
+  left: 0;
+}
+.dyx-circle-left-back-container {
+  z-index: 1;
+}
+.dyx-circle-left-cover-container {
+  z-index: 100;
+}
+
+.dyx-circle-right-container {
+  right: 0;
+}
+.dyx-circle-right-back-container {
+  z-index: 1;
+}
+.dyx-circle-right-cover-container {
+  z-index: 100;
+}
+
+.dyx-circle-left-common-progress {
+  width: 100px;
+  height: 200px;
+  border-style: solid;
+  border-right: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.dyx-circle-left-back-progress {
+  z-index: 1;
+}
+.dyx-circle-left-cover-progress {
+  z-index: 100;
+  transform-origin: 100% 50%;
+}
+
+.dyx-circle-right-common-progress {
+  width: 100px;
+  height: 200px;
+  border-style: solid;
+  border-left: 0;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.dyx-circle-right-back-progress {
+  z-index: 1;
+}
+.dyx-circle-right-cover-progress {
+  z-index: 100;
+  transform-origin: 0% 50%;
+}
