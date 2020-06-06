@@ -2,25 +2,21 @@ import React, { Component } from "react";
 import Progress from '../../src/index.js'
 
 export default class ProgressDemo extends Component {
-
   render() {
     return (
       <div>
+        <h4>半圆形式</h4>
+        <Progress type="semicircle" percent={25} />
+        <h4>半圆形式自定义颜色</h4>
         <Progress type="semicircle" percent={50} color="red" backColor="#ebecf0" />
-        <Progress type="semicircle" percent={30} borderWidth={10} />
-        <Progress type="circle" percent={25} color="red" backColor="#ebecf0" />
-        <Progress type="circle" percent={25} borderWidth={10} />
-        <Progress type="circle" percent={0} />
-        <Progress type="circle" percent={10} />
-        <Progress type="circle" percent={20} />
-        <Progress type="circle" percent={30} />
-        <Progress type="circle" percent={40} />
-        <Progress type="circle" percent={50} />
-        <Progress type="circle" percent={60} />
-        <Progress type="circle" percent={70} />
-        <Progress type="circle" percent={80} />
-        <Progress type="circle" percent={90} />
-        <Progress type="circle" percent={100} />
+        <h4>半圆形式自定义边框宽度</h4>
+        <Progress type="semicircle" percent={75} borderWidth={10} />
+        <h4>整圆形式</h4>
+        <Progress type="circle" percent={25} />
+        <h4>整圆形式自定义颜色</h4>
+        <Progress type="circle" percent={50} color="red" backColor="#ebecf0" />
+        <h4>整圆形式自定义边框宽度</h4>
+        <Progress type="circle" percent={75} borderWidth={10} />
       </div>
     )  
   }

@@ -1,21 +1,7 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 import './index.css';
 
 export default class CircleProgress extends Component {
-  static propTypes = {
-    percent: PropTypes.number,
-    borderWidth: PropTypes.number,
-    color: PropTypes.string,
-    backColor: PropTypes.string,
-  };
-
-  static defaultProps = {
-    percent: 0,
-    borderWidth: 4,
-    color: '#5584ff',
-    backColor: '#ebecf0',
-  }
   render() {
     const { color, backColor, percent, borderWidth } = this.props;
     let leftRotateAngle = 0; // 左侧旋转的角度

@@ -11,6 +11,7 @@ export default class Progress extends Component {
     percent: PropTypes.number,
     color: PropTypes.string,
     backColor: PropTypes.string,
+    borderWidth: PropTypes.number,
   };
 
   static defaultProps = {
@@ -18,6 +19,7 @@ export default class Progress extends Component {
     percent: 0,
     color: '#5584ff',
     backColor: '#ebecf0',
+    borderWidth: 4,
   }
   render() {
     const { type } = this.props;

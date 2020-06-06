@@ -1,21 +1,7 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 import './index.css';
 
 export default class SemicircleProgress extends Component {
-  static propTypes = {
-    percent: PropTypes.number,
-    borderWidth: PropTypes.number,
-    color: PropTypes.string,
-    backColor: PropTypes.string,
-  };
-
-  static defaultProps = {
-    percent: 0,
-    borderWidth: 4,
-    color: '#5584ff',
-    backColor: '#ebecf0',
-  }
   render() {
     const { color, backColor, percent, borderWidth } = this.props;
     const rotateAngle = (1 - (percent / 100)) * 180;
