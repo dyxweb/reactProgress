@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import SemicircleProgress from './SemicircleProgress';
 import CircleProgress from './CircleProgress';
+import LineProgress from './LineProgress';
 
-const comData = { semicircle: SemicircleProgress, circle: CircleProgress };
+const comData = { semicircle: SemicircleProgress, circle: CircleProgress, line: LineProgress };
 
 export default class Progress extends Component {
   static propTypes = {
@@ -19,7 +20,7 @@ export default class Progress extends Component {
     percent: 0,
     color: '#5584ff',
     backColor: '#ebecf0',
-    borderWidth: 4,
+    borderWidth: 6,
   }
   render() {
     const { type } = this.props;
