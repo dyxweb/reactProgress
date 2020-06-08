@@ -1,6 +1,9 @@
 ## 使用css+react实现进度条
 > 支持半圆、整圆形式
 
+### github
+[https://github.com/dyxweb/reactProgress](https://github.com/dyxweb/reactProgress)
+
 ### API
 
 | api | 类型 | 是否必选 | 默认值 | 说明 |
