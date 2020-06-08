@@ -13,6 +13,7 @@ export default class Progress extends Component {
     color: PropTypes.string,
     backColor: PropTypes.string,
     borderWidth: PropTypes.number,
+    radius: PropTypes.number,
   };
 
   static defaultProps = {
@@ -21,6 +22,7 @@ export default class Progress extends Component {
     color: '#5584ff',
     backColor: '#ebecf0',
     borderWidth: 6,
+    radius: 100,
   }
   render() {
     const { type } = this.props;

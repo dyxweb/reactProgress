@@ -1,12 +1,9 @@
 .dyx-circle-box {
-  width: 200px;
-  height: 200px;
   position: relative;
 }
 
 .dyx-circle-progress-container {
   position: absolute;
-  width: 100px;
   overflow: hidden;
 }
 
@@ -31,8 +28,6 @@
 }
 
 .dyx-circle-left-common-progress {
-  width: 100px;
-  height: 200px;
   border-style: solid;
   border-right: 0;
   border-top-left-radius: 100px;
@@ -47,8 +42,6 @@
 }
 
 .dyx-circle-right-common-progress {
-  width: 100px;
-  height: 200px;
   border-style: solid;
   border-left: 0;
   border-top-right-radius: 100px;
