@@ -25,14 +25,17 @@ export default class Progress extends Component {
     radius: 100,
   }
   render() {
-    const { type } = this.props;
-    let { percent } = this.props;
+    const { type, borderWidth } = this.props;
+    let { percent, radius } = this.props;
     const MatchCom = comData[type] || SemicircleProgress;
     if (percent > 100 || percent < 0) {
       percent = 0;
     }
+    if (radius < borderWidth) {
+      radius = borderWidth;
+    }
     return (
-      <MatchCom {...this.props} percent={percent} />
+      <MatchCom {...this.props} percent={percent} radius={radius} />
     )  
   }
 }

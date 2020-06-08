@@ -5,6 +5,7 @@ const SemicircleProgress = props => {
   const { color, backColor, percent, borderWidth, radius } = props;
   const rotateAngle = (1 - (percent / 100)) * 180;
 
+  // 外部容器的样式
   const boxStyle = {
     height: `${radius}px`
   }
@@ -24,7 +25,6 @@ const SemicircleProgress = props => {
     transform: `rotate(-${rotateAngle}deg)`,
     borderWidth: borderWidth,
   }
-  console.log(radius);
   return (
     <div className="dyx-semi-progress-box" style={boxStyle}>
       <div className="dyx-semi-common-progress dyx-semi-back-progress" style={backStyle}  />

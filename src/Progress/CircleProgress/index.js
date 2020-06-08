@@ -11,8 +11,8 @@ const CircleProgress = props => {
     // 大于50%
     leftRotateAngle = (1 - (percent / 100)) * 360;
   }
-  let rightRotateAngle = 0; // 右侧旋转的角度
 
+  let rightRotateAngle = 0; // 右侧旋转的角度
   if (percent === 0) {
     // 0%时旋转-180deg
     rightRotateAngle = 180;
@@ -24,11 +24,13 @@ const CircleProgress = props => {
     rightRotateAngle = 0;
   }
 
+  // 外部容器的样式
   const boxStyle = {
     width: `${radius * 2}px`,
     height: `${radius * 2}px`,
   }
 
+  // 内部容器的样式
   const halfBoxStyle = {
     width: `${radius}px`,
   }
