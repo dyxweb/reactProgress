@@ -11,6 +11,7 @@
 | backColor | string | false | '#ebecf0' | 无进度区域显示的颜色 | 
 | borderWidth | number | false | 6 | 进度条边框宽度 | 
 | radius | number | false | 100 | 在type为semicircle或circle形式下自定义圆的半径(包括边框的宽度),值要大于borderWidth。line形式想要控制宽度，直接在Progress外包裹一个自己期待的宽度的容器，Progress默认width为100% | 
+| text | reactNode | false | '' | 描述文本，整圆、半圆类型支持 | 
 
 ### 示例
 > npm i react-css-progress
@@ -43,6 +44,10 @@
 ```
 <Progress type="semicircle" percent={75} radius={60} />
 ```
+**半圆形式添加文案**
+```
+<Progress type="semicircle" percent={75} radius={60} text={<div style={{ color: 'red' }}>text</div>} />
+```
 **整圆形式**
 ```
 <Progress type="circle" percent={25} />
@@ -58,5 +63,9 @@
 **整圆形式自定义圆的半径**
 ```
 <Progress type="circle" percent={75} radius={60} />
+```
+**整圆形式添加文案**
+```
+<Progress type="circle" percent={75} text={<div style={{ color: 'red' }}>text</div>} />
 ```
 

@@ -2,7 +2,7 @@ import React from "react";
 import './index.css';
 
 const CircleProgress = props => {
-  const { color, backColor, percent, borderWidth, radius } = props;
+  const { color, backColor, percent, borderWidth, radius, text } = props;
   let leftRotateAngle = 0; // 左侧旋转的角度
   if (percent <= 50) {
     // 小于50%时旋转-180deg
@@ -47,7 +47,7 @@ const CircleProgress = props => {
     width: `${radius}px`,
     height: `${radius * 2}px`,
     borderColor: color,
-    transform: `rotate(-${leftRotateAngle}deg)`,
+    transform: `rotate(-${leftRotateAngle}deg) translateZ(0)`,
     borderWidth: borderWidth,
   }
 
@@ -63,7 +63,7 @@ const CircleProgress = props => {
     width: `${radius}px`,
     height: `${radius * 2}px`,
     borderColor: color,
-    transform: `rotate(-${rightRotateAngle}deg)`,
+    transform: `rotate(-${rightRotateAngle}deg) translateZ(0)`,
     borderWidth: borderWidth,
   }
   
@@ -81,6 +81,7 @@ const CircleProgress = props => {
       <div className="dyx-circle-progress-container dyx-circle-right-container dyx-circle-right-cover-container" style={halfBoxStyle}>
         <div className="dyx-circle-right-common-progress dyx-circle-right-cover-progress" style={rightCoverStyle} />
       </div>
+      {text && <div>{text}</div>}
     </div>
   )  
 }
